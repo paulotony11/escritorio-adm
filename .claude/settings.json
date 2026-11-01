@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(uv run python -m escritorio:*)",
+      "Bash(uv run pytest:*)",
+      "Read(./conhecimento/**)",
+      "Read(./contexto/**)",
+      "Read(./dados/**)",
+      "Write(./relatorios/**)"
+    ],
+    "ask": [
+      "Write(./conhecimento/**)",
+      "Write(./contexto/**)",
+      "Write(./modelos/**)",
+      "Edit(./.claude/**)",
+      "Edit(./CLAUDE.md)"
+    ],
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(del:*)",
+      "Bash(rmdir:*)",
+      "Bash(Remove-Item:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(Invoke-WebRequest:*)",
+      "Bash(Invoke-RestMethod:*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Read(./.env)",
+      "Read(./**/*.key)",
+      "Read(./**/*.pem)"
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "knowledge-work-plugins": {
+      "source": { "source": "github", "repo": "anthropics/knowledge-work-plugins" }
+    }
+  },
+  "enabledPlugins": {
+    "finance@knowledge-work-plugins": true,
+    "operations@knowledge-work-plugins": true
+  }
+}

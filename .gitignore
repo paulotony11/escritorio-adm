@@ -1,0 +1,34 @@
+# Ambiente
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# DADOS DO ESCRITÓRIO: nunca versionar
+dados/*
+!dados/.gitkeep
+relatorios/*
+!relatorios/.gitkeep
+*.ofx
+*.qfx
+*.xlsx
+*.xls
+*.pdf
+*.docx
+!modelos/*.docx
+!modelos/*.xlsx
+
+# Segredos
+.env
+*.key
+*.pem
+credentials*.json
+token*.json
+
+# Preferências locais do Claude
+.claude/settings.local.json
+.claude/scratch/
+
+# Cofre: configurações pessoais do Obsidian
+conhecimento/.obsidian/workspace*.json
+conhecimento/.obsidian/cache
