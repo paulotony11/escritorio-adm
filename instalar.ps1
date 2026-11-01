@@ -7,7 +7,7 @@
 
 param(
     [string]$Destino = (Join-Path $HOME "escritorio-adm"),
-    [string]$Repo = "https://github.com/PauloTony87/escritorio-adm.git"
+    [string]$Repo = "https://github.com/paulotony11/escritorio-adm.git"
 )
 
 $ErrorActionPreference = "Stop"

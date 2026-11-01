@@ -19,7 +19,7 @@ winget install --id Git.Git -e
 Feche e abra o PowerShell, e então:
 
 ```powershell
-git clone https://github.com/PauloTony87/escritorio-adm.git $HOME\escritorio-adm
+git clone https://github.com/paulotony11/escritorio-adm.git $HOME\escritorio-adm
 ```
 
 Na primeira vez o Git abre uma janela do navegador para entrar no GitHub; entre com a conta convidada. Depois:
