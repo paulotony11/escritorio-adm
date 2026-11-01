@@ -1,7 +1,6 @@
 # Instalador do ambiente do administrativo (Windows 10/11).
-# Uso (PowerShell):  .\instalar.ps1
-# Ou, com o repositorio publico:
-#   irm https://raw.githubusercontent.com/PauloTony87/escritorio-adm/main/instalar.ps1 | iex
+# Uso (PowerShell), de dentro da pasta do projeto ja baixada:  .\instalar.ps1
+# O repositorio e privado: o "git clone" pede login no GitHub na primeira vez.
 #
 # Idempotente: pode rodar de novo para atualizar. Texto sem acentos de proposito
 # (PowerShell 5.1 le scripts sem BOM como ANSI).

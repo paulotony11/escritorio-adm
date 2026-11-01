@@ -8,12 +8,27 @@ Ambiente pronto para a administradora do escritório usar o Claude Code em honor
 
 Pré-requisito: **Claude Desktop** instalado e com login em um plano **Team ou Enterprise** (sigilo profissional: confira os termos de retenção de dados).
 
-Abra o **PowerShell** e rode:
+Este repositório é **privado**. A conta do GitHub de quem vai instalar precisa ter sido convidada como colaboradora (permissão de leitura) por Paulo Tony.
+
+Abra o **PowerShell** e rode, uma linha por vez:
+
+```powershell
+winget install --id Git.Git -e
+```
+
+Feche e abra o PowerShell, e então:
 
 ```powershell
 git clone https://github.com/PauloTony87/escritorio-adm.git $HOME\escritorio-adm
+```
+
+Na primeira vez o Git abre uma janela do navegador para entrar no GitHub; entre com a conta convidada. Depois:
+
+```powershell
 & $HOME\escritorio-adm\instalar.ps1
 ```
+
+Se o PowerShell bloquear o script, rode antes `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`.
 
 O instalador, nesta ordem: instala Git e uv (se faltarem), prepara o Python e as bibliotecas, roda os testes, cria as pastas de trabalho e baixa IPCA e IGP-M do Banco Central. É seguro rodar de novo para atualizar.
 
